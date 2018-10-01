@@ -1,0 +1,36 @@
+/*
+Website Name: Tribe412Fitness
+Theme URI: tribe412fitness.com
+Author: Michael Riccelli
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Branding Variables
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Utility Classes
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Branding Variables
+--------------------------------------------------------------*/
+:root {
+  /*colors*/
+  --tribe-black: rgb(0,0,0);
+  --tribe-grey: rgb(204,204,204);
+  --tribe-primary-blue: rgb(8,194,245);
+ 
+  /*typography*/
+  --tribe-heading: font-family: 'Montserrat', sans-serif;
+  --tribe-paragraph: font-family: 'Roboto', sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
