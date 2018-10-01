@@ -1,0 +1,25 @@
+{
+  "name": "tribe412fitness-v2",
+  "version": "1.0.0",
+  "description": "Tribe 412 Fitness new version.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mriccelli75/tribe412fitness-v2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mriccelli75/tribe412fitness-v2/issues"
+  },
+  "homepage": "https://github.com/mriccelli75/tribe412fitness-v2#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "browser-sync": "^2.24.7"
+  }
+}
