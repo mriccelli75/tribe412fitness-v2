@@ -27,7 +27,7 @@ Author: Michael Riccelli
   --tribe-primary-blue: rgb(8,194,245);
  
   /*typography*/
-  --tribe-heading: font-family: 'Montserrat', sans-serif;
+  --tribe-heading: font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
   --tribe-paragraph: font-family: 'Roboto', sans-serif;
 }
 
@@ -66,20 +66,31 @@ a:hover {
 a:hover i.fas.fa-angle-double-right {
   padding-left: 10px;
 }
-a:visited {
-  color: var(--tribe-black);
-}
+
 ::selection {
   background: #0cc2f6;
   color: #fff;
 }
 .btn {
   border-radius: 0;
+  font-family: var(--tribe-heading);
 }
+.btn-primary {
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;  
+}
+.btn-xl {
+  font-size: 18px;
+  padding: 20px 40px;
+}
+
 .call-to-action-one {
   background:none;
   border: 1px solid #fff;
   color: #fff; 
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   transition: 0.5s;
 }
 .call-to-action-one:hover {
@@ -87,9 +98,10 @@ a:visited {
   border: 1px solid #fff;
 }
 .call-to-action-two {
-  background:#fff;
   border: 1px solid var(--tribe-primary-blue);
   color: var(--tribe-primary-blue); 
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   transition: 0.5s;
 }
 .call-to-action-two:hover {
@@ -139,6 +151,12 @@ ul {
     text-align: center;
   }
 }
+
+/* ======== UTILITY CLASSES ========*/
+.bg-blue {
+  background: var(--tribe-primary-blue);
+  color: #fff;
+}
 /*
 * ==========================================================
 *     NAVBAR
@@ -159,19 +177,6 @@ img#tribe-brand {
   border-top: 8px solid var(--tribe-primary-blue);
 }
 
-.navbar .langs a:first-of-type,
-.navbar .search-btn {
-  margin-left: 20px;
-  padding-left: 20px;
-  border-left: 1px solid #ddd;
-  height: 20px;
-  line-height: 20px;
-}
-
-.navbar .search-btn {
-  color: #333;
-  font-size: 0.9em;
-}
 
 .navbar .navbar-toggler {
   margin-top: 5px;
@@ -327,6 +332,98 @@ img#tribe-brand {
   }
 }
 
+header.masthead {
+  text-align: center;
+  color: #fff;
+  background-image: url('../img/header-bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+}
+header.masthead .intro-text {
+  padding-top: 150px;
+  padding-bottom: 120px;
+}
+header.masthead .intro-text .intro-lead-in {
+  font-size: 22px;
+  font-style: italic;
+  line-height: 22px;
+  margin-bottom: 25px;
+  font-family: 'Droid Serif','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
 
+header.masthead .intro-text .intro-heading {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 50px;
+  margin-bottom: 25px;
+  font-family: var(--tribe-heading);
+}
+@media (min-width: 768px){
+  header.masthead .intro-text .intro-heading {
+    font-size: 62px;
+    font-weight: 700;
+    line-height: 75px;
+    margin-bottom: 50px;
+    font-family: var(--tribe-heading);
+}
+}
+section {
+  padding-top: 75px;
+  padding-bottom: 100px;
+}
+section#why-tribe h1 {
+  margin-bottom: 1.5rem;
+}
+.edge--bottom {
+  position: relative;
+  z-index: 1;
+}
 
+.edge--bottom:after {
+  background: inherit;
+  content: '';
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+}
+.edge--bottom:after {
+  bottom: 0;
+  -webkit-transform: skewY(-1.5deg);
+          transform: skewY(-1.5deg);
+  -webkit-transform-origin: 100%;
+          transform-origin: 100%;
+}
+
+.edge--top--reverse {
+  position: relative;
+  z-index: 1;
+}
+.edge--top--reverse:before {
+  background: inherit;
+  content: '';
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+}
+.edge--top--reverse:before {
+  top: 0;
+  -webkit-transform: skewY(-1.5deg);
+          transform: skewY(-1.5deg);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
 
