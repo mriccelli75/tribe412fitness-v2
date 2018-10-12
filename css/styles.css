@@ -118,6 +118,16 @@ span {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
+
+sub, sup {
+  position: relative;
+  font-size: 55%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+sup {
+  top: -.5em;
+}
 a:hover, a:focus,
 i:hover,
 i:focus,
@@ -448,6 +458,14 @@ section#workouts .workouts--text {
 section#pricing {
   background: var(--tribe-black);
   color: #fff;
+  background-image: url('../img/header-bg-pricing.png');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 section#pricing .price-box {
@@ -486,4 +504,10 @@ section#pricing .currency {
   /* margin-right: 6px; */
   right: 100%;
   top: 21px;
+}
+.mind-body {
+  margin-top: 15px;
+}
+section#mind-body img {
+    width: 200px;
 }
