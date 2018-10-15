@@ -474,6 +474,7 @@ section#pricing .price-box {
   background: var(--tribe-black);
   margin-top: 40px;
   transition: .5s;
+  text-align: center;
 }
 
 section#pricing .price-box h4 {
@@ -481,7 +482,8 @@ section#pricing .price-box h4 {
   border-bottom: 1px solid white;
 }
 
-section#pricing .price-box:hover {
+section#pricing .price-box:hover,
+secition#pricing .price-box:focus {
   background: var(--tribe-primary-blue);
   transform: translateY(-5px);
 
@@ -492,7 +494,6 @@ section#pricing .price-header > h2 {
   font-weight: 700;
   display: inline-block;
   position: relative;
-  left: 50px;
   padding-bottom: 10px;
   border-bottom: 1px solid white;
 }
@@ -510,4 +511,26 @@ section#pricing .currency {
 }
 section#mind-body img {
     width: 200px;
+}
+
+section#contact-us {
+  background: var(--tribe-black);
+  color: #fff;
+  background-image: url('../img/map.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+section#contact-us .form-group textarea.form-control {
+  height: 248px;
+}
+
+section#contact-us .form-group input, section#contact .form-group textarea {
+  padding: 20px;
 }
