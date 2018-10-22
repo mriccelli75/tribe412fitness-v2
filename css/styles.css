@@ -358,7 +358,7 @@ img#tribe-brand {
 header.masthead {
   text-align: center;
   color: #fff;
-  background-image: url('../img/header-bg.jpg');
+  background-image: url('../img/header-bg-groupshot.png');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -395,7 +395,9 @@ header.masthead .intro-text .intro-heading {
     margin-bottom: 50px;
     font-family: var(--tribe-heading);
 }
+
 }
+
 section {
   padding-top: 75px;
   padding-bottom: 100px;
@@ -552,7 +554,17 @@ section#contact-us #contactForm ul li {
   margin-right: 1rem;
   letter-spacing: 1px;
 }
+@media(max-width:768px) {
 
+  section#contact-us h1 {
+      margin-bottom: 75px;
+      display: none;
+  }
+
+  #contactForm > div > div:nth-child(1) {
+    order:2;
+  }
+}
 footer {
   padding: 25px 0;
   text-align: center;
