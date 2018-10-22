@@ -107,7 +107,9 @@ a:hover i.fas.fa-angle-double-right {
   margin-bottom: 1rem;
   transition: 0.5s;
 }
-.call-to-action-two:hover {
+.call-to-action-two:hover,
+.call-to-action-two:focus,
+.call-to-action-two:not(:disabled):not(.disabled):active{
   background: var(--tribe-primary-blue);
   border: 1px solid #fff;
   color: #fff;
@@ -145,7 +147,7 @@ ul {
   margin: 0;
   padding: 0;
 }
-* General Media Query ------------------------------------- */
+/* General Media Query ------------------------------------- */
 @media (max-width: 767px) {
   nav.navbar .search-btn {
     margin-left: 0;
@@ -175,6 +177,14 @@ ul {
 *     NAVBAR
 * ==========================================================
 */
+
+/* top message */
+div#mb-message {
+  margin-bottom: 0;
+  border-radius: 0;
+  font-size: .85rem;
+}
+
 button:focus {
   outline: 1px dotted;
   outline: none;
@@ -490,7 +500,7 @@ secition#pricing .price-box:focus {
 }
 
 section#pricing .price-header > h2 {
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 700;
   display: inline-block;
   position: relative;
@@ -526,11 +536,29 @@ section#contact-us {
   background-size: cover;
 
 }
-
+section#contact-us h1 {
+  margin-bottom: 75px;
+}
 section#contact-us .form-group textarea.form-control {
   height: 248px;
 }
-
 section#contact-us .form-group input, section#contact .form-group textarea {
   padding: 20px;
+}
+
+section#contact-us #contactForm ul li {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  margin-right: 1rem;
+  letter-spacing: 1px;
+}
+
+footer {
+  padding: 25px 0;
+  text-align: center;
+  background: var(--tribe-primary-blue);
+}
+
+footer p {
+  font-weight: 700;
 }
